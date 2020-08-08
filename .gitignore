@@ -119,3 +119,13 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/django
+
+#
+# custom ignorance
+#
+
+# my virtual environment
+.venv/
+
+# custom vscode settings
+.vscode/
