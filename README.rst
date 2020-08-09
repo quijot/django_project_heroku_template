@@ -50,7 +50,7 @@ Step by step
 
 ... and that's it, your Django project is up! Now start adding it apps and stuff.
 
-To test it is ok go to `https://<<herokuapp_name>>.herokuapp.com/admin`_. Without /admin it will fail because we set ``DEBUG=False``.
+To test it go to https://<<herokuapp_name>>.herokuapp.com/admin. Without */admin* it will fail because we set ``DEBUG=False``.
 
 
 Future commits & Database Migrations
