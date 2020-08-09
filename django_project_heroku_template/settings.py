@@ -146,9 +146,10 @@ TEMPLATES[0]["DIRS"].append(BASE_DIR / "templates")
 # Deployment
 
 # Heroku
+HEROKUAPP_NAME = os.environ.get("DJANGO_HEROKUAPP_NAME", "my_new_clean_herokuapp")
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "r+)1xlbz%lau$zpv$mbn#_6cy6rkc-eg!2@0s45jx!2ubuo3m1")
 DEBUG = os.environ.get("DJANGO_DEBUG", "") != "False"
-# ALLOWED_HOSTS = ["<<herokuapp_name>>.herokuapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = [f"{HEROKUAPP_NAME}.herokuapp.com", "127.0.0.1"]
 
 # Heroku: Update DATABASE configuration from $DATABASE_URL.
 db_from_env = dj_database_url.config(conn_max_age=500)
